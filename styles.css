@@ -1,36 +1,84 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .emblem {
+  color: #ccc;
+  text-decoration: none;
+}
+.nav .title {
+  margin-left: 1rem;
+  float: center;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.nav .nav-item {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-weight: 100;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+}
+.nav-items {
+  margin-right: 2rem;
+}
+.nav .nav-item:hover {
+  color: white;
+}
+.nav .nav-item.active {
+  color: #b999ff;
+}
+
+.container {
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 h1 {
   font-size: 5rem;
-  color: #DBEDF3;
+  color: #dbedf3;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
-
+  text-shadow: 3px 0 #da0463;
 }
 
 footer {
-  color: #DBEDF3;
+  color: #dbedf3;
   font-family: sans-serif;
 }
 
-.contacts{
+.contacts {
   text-align: right;
   margin-right: 2rem;
   padding: 2rem;
 }
-.fab{
+.fab {
   padding: 5px;
 }
 
-a{
-  color: #96BAFF;
+a {
+  color: #96baff;
 }
-    /*drums */
+/*drums */
 .w {
-   background-image: url("images/crash.png");
+  background-image: url("images/crash.png");
   background-color: #cccccc;
 }
 
@@ -42,7 +90,6 @@ a{
 .s {
   background-image: url("images/snare.png");
   background-color: #cccccc;
-
 }
 
 .d {
@@ -75,7 +122,7 @@ a{
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
+  box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
 
@@ -85,13 +132,13 @@ a{
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 10px solid #b999ff;
   font-size: 5rem;
-  font-family: 'Arvo', cursive;
+  font-family: "Arvo", cursive;
   line-height: 2;
   font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
+  color: #8d62dc;
+  text-shadow: 3px 0 #dbedf3;
   border-radius: 15px;
   display: inline-block;
   width: 150px;
